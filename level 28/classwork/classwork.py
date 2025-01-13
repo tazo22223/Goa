@@ -6,4 +6,3 @@ def manual_index(main_string, search_string):
 
 print(manual_index("hello world", "world"))  # გამოიტანს 6
 print(manual_index("hello world", "abc"))    # გამოიტანს -1
-
