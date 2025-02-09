@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <title>ცხრილი</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background: #f4f4f4;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #fff;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: left;
+    }
+    th {
+      background: #4CAF50;
+      color: #fff;
+    }
+    /* კენტი რიგები */
+    tbody tr:nth-child(odd) {
+      background: #f9f9f9;
+    }
+    /* ლუწი რიგები */
+    tbody tr:nth-child(even) {
+      background: #e0e0e0;
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <thead>
+      <tr>
+        <th>Film Title</th>
+        <th>Released</th>
+        <th>Studio</th>
+        <th>Worldwide Gross</th>
+        <th>Domestic Gross</th>
+        <th>International Gross</th>
+        <th>Budget</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>The Lion King (2019)</strong></td>
+        <td>2019</td>
+        <td>Disney</td>
+        <td>$1,657M</td>
+        <td>$543M</td>
+        <td>$1,114M</td>
+        <td>$260M</td>
+      </tr>
+      <tr>
+        <td><strong>Frozen II</strong></td>
+        <td>2019</td>
+        <td>Disney</td>
+        <td>$1,450M</td>
+        <td>$477M</td>
+        <td>$972M</td>
+        <td>$150M</td>
+      </tr>
+      
+    </tbody>
+  </table>
+</body>
+</html>

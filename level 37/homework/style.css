@@ -1,0 +1,76 @@
+.styled-list li:nth-child(even) {
+    background-color: #f0f0f0; /* Light gray background for even items */
+  }
+  
+  .styled-list li:nth-child(odd) {
+    background-color: #ffffff; /* White background for odd items */
+  }
+  
+  .styled-list {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  .colorful-list li:nth-child(3n) {
+    color: #FF6347; /* Tomato color for every third item */
+  }
+  
+  .colorful-list {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+  .custom-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .custom-list li::before {
+    content: '🌟'; 
+    padding-right: 8px; 
+  }
+  
+
+
+
+
+
+
+
+
+  .bold-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .bold-list li:first-child,
+  .bold-list li:last-child {
+    font-weight: bold;
+  }
+  

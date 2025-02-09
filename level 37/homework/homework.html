@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rank Table</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 60%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  th, td {
+    padding: 15px;
+    text-align: center;
+  }
+
+  th {
+    background-color: #009688;
+    color: white;
+    font-size: 18px;
+  }
+
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+
+  tr:nth-child(odd) {
+    background-color: #ffffff;
+  }
+
+  tr:nth-child(2) {
+    background-color: #e0f2f1;
+    font-weight: bold;
+  }
+
+  td:nth-child(2) {
+    color: #009688;
+    font-weight: bold;
+  }
+
+  td:nth-child(3) {
+    color: #00796b;
+    font-weight: bold;
+  }
+
+  td:nth-child(4) {
+    font-style: italic;
+  }
+
+  table, th, td {
+    border-bottom: 2px solid #009688;
+  }
+
+  tr:last-child td {
+    border-bottom: none;
+  }
+</style>
+</head>
+<body>
+
+<table>
+  <tr>
+    <th>Rank</th>
+    <th>Name</th>
+    <th>Points</th>
+    <th>Team</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Domenic</td>
+    <td>88,110</td>
+    <td>dcode</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>Sally</td>
+    <td>72,400</td>
+    <td>Students</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>Nick</td>
+    <td>52,300</td>
+    <td>dcode</td>
+  </tr>
+</table>
+
+</body>
+</html>
