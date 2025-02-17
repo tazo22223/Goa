@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customized Box with Border</title>
+    <style>
+        /* Style for the div with a solid border */
+        .bordered-div {
+            border: 3px solid #4CAF50; /* Green solid border with 3px width */
+            padding: 20px;             /* Padding inside the div */
+            background-color: #f9f9f9; /* Light gray background color */
+            border-radius: 10px;       /* Rounded corners */
+            font-size: 16px;           /* Font size */
+            width: 300px;              /* Width of the div */
+            margin: 20px auto;         /* Center the div with margin */
+        }
+    </style>
+</head>
+<body>
+    <h1>Box with Customized Border</h1>
+    <div class="bordered-div">
+        This is a div with a solid border. The border color, width, and style have been customized.
+    </div>
+</body>
+</html>
