@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            background-color: #0d3b4d;
+            overflow: hidden;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+        }
+        .navbar .brand {
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+            flex-grow: 1;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            font-size: 16px;
+        }
+        .navbar a:hover {
+            color: #f4a261;
+        }
+        .navbar .active {
+            color: #f4a261;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="brand">NAVBAR</div>
+        <a href="#home" class="active">HOME</a>
+        <a href="#about">ABOUT</a>
+        <a href="#services">SERVICES</a>
+        <a href="#contact">CONTACT</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Column Direction</title>
+    <style>
+        .container {
+            display: flex; /* Enable flexbox */
+            flex-direction: column; /* Arrange items in a vertical column */
+            justify-content: space-between; /* Distribute space between items */
+            align-items: center; /* Center items horizontally */
+            height: 100vh; /* Full viewport height for demonstration */
+        }
+        .item {
+            background-color: lightblue;
+            border: 1px solid #ccc;
+            padding: 20px;
+            text-align: center;
+            margin: 10px; /* Add some margin for spacing */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+</body>
+</html>

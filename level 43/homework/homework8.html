@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox განლაგება</title>
+    <style>
+        /* მთლიანი გვერდის სტილები */
+        body {
+            background-color: #999; /* ნაცრისფერი ფონი */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* მთლიანი ეკრანის სიმაღლე */
+            margin: 0;
+        }
+
+        /* კონტეინერი ელემენტებისთვის */
+        .container {
+            display: flex;
+            gap: 30px; /* დაშორება ელემენტებს შორის */
+        }
+
+        /* ინდივიდუალური ბლოკები */
+        .box {
+            width: 100px;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 16px;
+            font-weight: bold;
+            color: white;
+            border: 2px solid black;
+        }
+
+        /* ინდივიდუალური ელემენტების ფერები */
+        .box1 { background-color: #3498db; } /* ლურჯი */
+        .box2 { background-color: #2ecc71; } /* მწვანე */
+        .box3 { background-color: #e74c3c; } /* წითელი */
+        .box4 { background-color: #f39c12; } /* ნარინჯისფერი */
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="box box1">Item1</div>
+        <div class="box box2">Item2</div>
+        <div class="box box3">Item3</div>
+        <div class="box box4">Item4</div>
+    </div>
+
+</body>
+</html>
