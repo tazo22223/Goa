@@ -1,0 +1,16 @@
+body {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    min-height: 100vh; /* Ensure the body takes up the full viewport height */
+    margin: 0; /* Remove default margin */
+}
+
+main {
+    flex: 1; /* Allows the main content to grow and fill available space */
+}
+
+footer {
+    background-color: #f1f1f1; /* Optional: Footer styling */
+    text-align: center; /* Optional: Centers footer text */
+    padding: 10px; /* Optional: Footer spacing */
+}

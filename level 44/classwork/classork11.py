@@ -5,3 +5,4 @@ def bmi(weight, height):
     elif bmi_value <= 25.0: return "Normal"
     elif bmi_value <= 30.0: return "Overweight"
     return "Obese"
+    

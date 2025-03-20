@@ -1,0 +1,9 @@
+.box1 {
+    position: relative; /* Establishes a positioning context */
+    top: 0; /* Ensures Box 1 stays in place */
+}
+
+.box2 {
+    position: relative; /* Allows for positioning adjustments */
+    top: 20px; /* Moves Box 2 down by 20px, creating a gap */
+}

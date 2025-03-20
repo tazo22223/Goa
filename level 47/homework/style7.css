@@ -1,0 +1,4 @@
+.box {
+    position: relative; /* Ensures the box stays within its normal flow */
+    transform: translateY(-10px); /* Moves the box 10px upwards */
+}

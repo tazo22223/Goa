@@ -1,0 +1,11 @@
+.container {
+    display: flex; /* Enables Flexbox layout */
+    gap: 10px; /* Optional: Adds space between the boxes */
+}
+
+.box1, .box2 {
+    flex: 1; /* Optional: Makes both boxes equal in width */
+    padding: 10px; /* Adds space inside each box */
+    background-color: lightblue; /* Styling example */
+    text-align: center; /* Centers text inside the boxes */
+}
