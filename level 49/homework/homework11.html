@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadow Animation</title>
+    <style>
+        .shadow-card {
+            width: 300px; /* Card width */
+            height: 200px; /* Card height */
+            background-color: white; /* Card background */
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Initial shadow */
+            transition: box-shadow 0.5s ease; /* Smooth shadow transition */
+            margin: 50px auto; /* Center the card */
+        }
+
+        .shadow-card:hover {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Darker, larger shadow on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="shadow-card"></div>
+</body>
+</html>

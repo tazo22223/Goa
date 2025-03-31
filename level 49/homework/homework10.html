@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotation Effect</title>
+    <style>
+        .rotate-icon {
+            display: inline-block; /* Ensures the icon behaves like an inline element */
+            width: 100px; /* Width of the icon */
+            height: 100px; /* Height of the icon */
+            background-color: coral; /* Background color of the icon */
+            border-radius: 50%; /* Make the icon round */
+            transition: transform 0.4s ease; /* Smooth rotation transition */
+        }
+
+        .rotate-icon:hover {
+            transform: rotate(15deg); /* Rotate slightly on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="rotate-icon"></div>
+</body>
+</html>

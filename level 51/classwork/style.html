@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background and Rotation Animation</title>
+    <style>
+        .div-block {
+            width: 100px;
+            height: 100px;
+            background: black;
+            transition: 3s;
+        }
+
+        .div-block:hover {
+            animation: bg-and-deg-change 3s;
+        }
+
+        @keyframes bg-and-deg-change {
+            0% {
+                background: black;
+                transform: rotate(0deg);
+            }
+            50% {
+                background: green;
+                transform: rotate(180deg);
+            }
+            100% {
+                background: blue;
+                transform: rotate(180deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="div-block"></div>
+</body>
+</html>
+

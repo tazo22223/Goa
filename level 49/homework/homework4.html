@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Scaling Effect</title>
+    <style>
+        .scaling-image {
+            width: 300px; /* Initial width of the image */
+            height: auto; /* Maintain aspect ratio */
+            transition: transform 0.4s ease; /* Smooth scaling effect */
+        }
+
+        .scaling-image:hover {
+            transform: scale(1.1); /* Scale up by 10% on hover */
+        }
+    </style>
+</head>
+<body>
+    <img class="scaling-image" src="https://via.placeholder.com/300" alt="Sample Image">
+</body>
+</html>

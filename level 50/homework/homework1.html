@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Validation</title>
+    <script>
+        function validateInput() {
+            const userInput = document.getElementById("numberInput").value;
+            if (isNaN(userInput) || userInput.trim() === "") {
+                document.getElementById("error").textContent = "Error: Please enter a valid number.";
+            } else {
+                document.getElementById("error").textContent = "";
+                alert("You entered a valid number: " + userInput);
+            }
+        }
+    </script>
+</head>
+<body>
+    <label for="numberInput">Enter a number:</label>
+    <input type="text" id="numberInput" placeholder="Type here">
+    <button onclick="validateInput()">Submit</button>
+    <p id="error" style="color: red;"></p>
+</body>
+</html>
