@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delayed Animation</title>
+    <style>
+        .animate {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+        }
+        .animate.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <div id="box" class="animate">Hello, I'm animated!</div>
+
+    <script>
+        window.onload = function() {
+            setTimeout(() => {
+                document.getElementById("box").classList.add("show");
+            }, 2000); // 2 seconds delay
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10-Second Fade Effect</title>
+    <style>
+        .fade {
+            width: 200px;
+            height: 100px;
+            background-color: steelblue;
+            text-align: center;
+            line-height: 100px;
+            color: white;
+            font-size: 20px;
+            opacity: 1;
+            animation: fadeEffect 10s linear;
+        }
+
+        @keyframes fadeEffect {
+            from {
+                opacity: 1;
+            }
+            to {
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="fade">Fading away...</div>
+</body>
+</html>

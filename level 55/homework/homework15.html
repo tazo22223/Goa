@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Grid Layout</title>
+  <style>
+    body {
+      background: #222;
+      padding: 20px;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(5, 150px);
+      grid-template-areas:
+        "hero hero sidebar"
+        "hero hero sidebar"
+        "feature feature feature"
+        "five six seven"
+        "eight nine nine";
+      gap: 10px;
+      width: 100%;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .grid-item {
+      color: white;
+      font-size: 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 10px;
+      font-family: sans-serif;
+    }
+
+    .hero    { grid-area: hero; background: linear-gradient(135deg, #f6a, #f9f); }
+    .sidebar { grid-area: sidebar; background: linear-gradient(135deg, #7fffd4, #1e90ff); }
+    .feature { grid-area: feature; background: linear-gradient(135deg, #dda0dd, #da70d6); }
+    .five    { grid-area: five; background: linear-gradient(135deg, #fbc2eb, #a6c1ee); }
+    .six     { grid-area: six; background: linear-gradient(135deg, #fbc2eb, #a6c1ee); }
+    .seven   { grid-area: seven; background: linear-gradient(135deg, #fbc2eb, #a6c1ee); }
+    .eight   { grid-area: eight; background: linear-gradient(135deg, #ff9a9e, #fad0c4); }
+    .nine    { grid-area: nine; background: linear-gradient(135deg, #ff9a9e, #fad0c4); }
+  </style>
+</head>
+<body>
+
+  <div class="grid-container">
+    <div class="grid-item hero">1</div>
+    <div class="grid-item sidebar">3<br>4</div>
+    <div class="grid-item feature">2</div>
+    <div class="grid-item five">5</div>
+    <div class="grid-item six">6</div>
+    <div class="grid-item seven">7</div>
+    <div class="grid-item eight">8</div>
+    <div class="grid-item nine">9</div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframes Animation</title>
+    <style>
+        /* Keyframes */
+        @keyframes exampleAnimation {
+            0% {
+                transform: translateX(0);
+                background-color: red;
+            }
+            100% {
+                transform: translateX(300px);
+                background-color: blue;
+            }
+        }
+
+        /* Animated element */
+        .animated-element {
+            width: 100px;
+            height: 100px;
+            /* Animation property */
+            animation: exampleAnimation 5s linear infinite;
+        }
+    </style>
+</head>
+<body>
+    <div class="animated-element"></div>
+</body>
+</html>
