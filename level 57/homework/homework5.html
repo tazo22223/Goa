@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Modern Grid</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #333;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      grid-auto-rows: 150px;
+      gap: 10px;
+      padding: 10px;
+    }
+
+    .item {
+      background-color: white;
+    }
+
+    .red { background-color: #f44336; }
+    .blue { background-color: #00bcd4; }
+    .gold { background-color: #d4af37; }
+
+    .i1 { grid-column: span 1; grid-row: span 2; }   /* Left red */
+    .i2 { grid-column: span 2; }                     /* Top blue */
+    .i3 { grid-column: span 3; background-color: #d4af37; } /* Top gold */
+    .i4 { grid-column: span 2; grid-row: span 2; background-color: #d4af37; }
+    .i5 { grid-column: span 2; grid-row: span 2; }   /* Center white */
+    .i6 { grid-column: span 1; grid-row: span 2; background-color: #f44336; }
+    .i7 { grid-column: span 2; }                     /* Bottom red */
+    .i8 { grid-column: span 1; background-color: #00bcd4; }
+    .i9 { grid-column: span 1; grid-row: span 2; }   /* Bottom white */
+  </style>
+</head>
+<body>
+  <div class="grid">
+    <div class="item red i1"></div>
+    <div class="item blue i2"></div>
+    <div class="item gold i3"></div>
+    <div class="item gold i4"></div>
+    <div class="item i5"></div>
+    <div class="item red i6"></div>
+    <div class="item red i7"></div>
+    <div class="item blue i8"></div>
+    <div class="item i9"></div>
+  </div>
+</body>
+</html>

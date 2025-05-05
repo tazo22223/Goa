@@ -1,0 +1,11 @@
+JavaScript-ის კოდი შეიძლება დაწერილი იყოს რამდენიმე განსხვავებულ ადგილას, რაც დამოკიდებულია გამოყენების კონტექსტსა და საჭიროებაზე. აქ მოცემულია JavaScript-ის კოდის დასაწერი ძირითადი მეთოდები:
+1. Inline JavaScript (ატრიბუტში)
+
+
+2. Internal JavaScript (<script> თეგში)
+
+3. External JavaScript (გარე ფაილში)
+
+4JavaScript "Event Handlers" HTML-ში
+
+5. JavaScript "Console Execution"

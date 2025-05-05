@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Grid Layout</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: repeat(4, 150px);
+      gap: 5px;
+      height: 100vh;
+    }
+
+    .item {
+      color: white;
+      font-weight: bold;
+      font-size: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .item1  { background: #c83771; grid-column: 1; grid-row: 1; }
+    .item2  { background: #cc33aa; grid-column: 2; grid-row: 1 / span 2; }
+    .item3  { background: #ec6b5e; grid-column: 3; grid-row: 1 / span 4; font-size: 28px; }
+    .item4  { background: #f0c541; grid-column: 4; grid-row: 1; }
+    .item5  { background: #4c8543; grid-column: 1; grid-row: 2; }
+    .item6  { background: #297986; grid-column: 4; grid-row: 2; }
+    .item7  { background: #839c1c; grid-column: 1; grid-row: 3; }
+    .item8  { background: #397351; grid-column: 2; grid-row: 3; }
+    .item9  { background: #2ccac4; grid-column: 2; grid-row: 4; }
+    .item10 { background: #2ecc71; grid-column: 4; grid-row: 3; }
+    .item11 { background: #513871; grid-column: 1 / span 2; grid-row: 4; }
+    .item12 { background: #e0243a; grid-column: 4; grid-row: 4; }
+  </style>
+</head>
+<body>
+  <div class="grid">
+    <div class="item item1">1</div>
+    <div class="item item2">2</div>
+    <div class="item item3">CSS Grid Layout</div>
+    <div class="item item4">4</div>
+    <div class="item item5">5</div>
+    <div class="item item6">6</div>
+    <div class="item item7">7</div>
+    <div class="item item8">8</div>
+    <div class="item item9">9</div>
+    <div class="item item10">10</div>
+    <div class="item item11">11</div>
+    <div class="item item12">12</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Grid Layout</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      font-family: sans-serif;
+      background-color: #eaf5e0;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-areas:
+        "header header header"
+        "sidebar content1 content1"
+        "sidebar content2 content3"
+        "footer footer footer";
+      grid-template-columns: 1fr 2fr 2fr;
+      grid-template-rows: auto;
+      gap: 10px;
+      border: 1px solid #000;
+      padding: 10px;
+    }
+
+    .grid-item {
+      background-color: limegreen;
+      padding: 20px;
+      border: 1px solid black;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .header {
+      grid-area: header;
+    }
+
+    .sidebar {
+      grid-area: sidebar;
+    }
+
+    .content1 {
+      grid-area: content1;
+    }
+
+    .content2 {
+      grid-area: content2;
+    }
+
+    .content3 {
+      grid-area: content3;
+    }
+
+    .footer {
+      grid-area: footer;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>CSS GRID</h1>
+
+  <div class="grid-container">
+    <div class="grid-item header">Header</div>
+    <div class="grid-item sidebar">Side Bar</div>
+    <div class="grid-item content1">Content 1</div>
+    <div class="grid-item content2">Content 2</div>
+    <div class="grid-item content3">Content 3</div>
+    <div class="grid-item footer">Footer</div>
+  </div>
+
+</body>
+</html>
